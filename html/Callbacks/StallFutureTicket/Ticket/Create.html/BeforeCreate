@@ -21,21 +21,27 @@ if (!exists $$ARGSRef{'AddMoreAttach'} && defined($$ARGSRef{'id'}) &&
     $$ARGSRef{'id'} == 'new') {
     my $date = new Date::Manip::Date;
 
-    ## Parse start date:
-    my $starts = $$ARGSRef{'Starts'};
-    $date->parse($starts);
+    ## Check wether 'Starts' is set:
+    if ((!$$ARGSRef{'Starts'}) || ($$ARGSRef{'Starts'} =~ /^[ \t]*$/)) {
+        $$skip_create = 1;
+        push @{$results}, loc('Error: empty start date');
+    } else {
+        ## Parse start date:
+        my $starts = $$ARGSRef{'Starts'};
+        $date->parse($starts);
 
-    ## Parse actual time:
-    my $now = $date->new_date;
-    $now->parse('now');
+        ## Parse actual time:
+        my $now = $date->new_date;
+        $now->parse('now');
 
-    ## Compare booth times:
-    my $cmp = $date->cmp($now);
+        ## Compare booth times:
+        my $cmp = $date->cmp($now);
 
-    ## Make a decision:
-    if ($cmp >= 0) {
-        ## Update status:
-        $$ARGSRef{'Status'} = 'stalled';
+        ## Make a decision:
+        if ($cmp >= 0) {
+            ## Update status:
+            $$ARGSRef{'Status'} = 'stalled';
+        }
     }
 }
 
