@@ -1,8 +1,13 @@
 Revision history for RT-Extension-StallFutureTicket
 
-0.1.1   Di 15 Nov 2011 15:04:54 CET
-        Fixed README.
+0.2     Thu, 17 Nov 2011 12:37:58 +0100
+        return error message if start time is not set
+        improved meta information
+        added SIGNATURE
 
-0.1     Di 15 Nov 2011 10:07:47 CET
+0.1.1   Tue, 15 Nov 2011 15:04:54 +0100
+        added plain README
+
+0.1     Tue, 15 Nov 2011 10:07:47 +0100
         Initial release.
 

@@ -1,0 +1,43 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.66.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 7d3125edc8a17df5faa4b6800efd396aecd33e37 Changes
+SHA1 fba80a01281b6895a80ac6ee96ae383a85397a52 MANIFEST
+SHA1 93acf180e453544902ae66ebd1d6133d46c72a08 META.yml
+SHA1 e074ac8412d2fc2d2d555be3830db5f944cfbac1 Makefile.PL
+SHA1 a28229b2bcd13221825442b026c3e5956210574b README
+SHA1 5ef7ac8d1dc048b213102c4ebc8b9342d59d0167 html/Callbacks/StallFutureTicket/Ticket/Create.html/BeforeCreate
+SHA1 7305dbe2904416e28decb05396988a5d51d578be inc/Module/Install.pm
+SHA1 129960509127732258570c122042bc48615222e1 inc/Module/Install/Base.pm
+SHA1 cf3356ed9a5bd2f732527ef9e7bc5ef4458c8a93 inc/Module/Install/Can.pm
+SHA1 bf0a3e1977effc2832d7a813a76dce3f31b437b6 inc/Module/Install/Fetch.pm
+SHA1 b721c93ca5bc9a6aa863b49af15f1b1de6125935 inc/Module/Install/Makefile.pm
+SHA1 026cc0551a0ad399d195e395b46bdf842e115192 inc/Module/Install/Metadata.pm
+SHA1 4c845c66385929c9d080228ddf2e730066b310d3 inc/Module/Install/RTx.pm
+SHA1 5457015ea5a50e93465bf2dafa29feebd547f85b inc/Module/Install/Win32.pm
+SHA1 051e7fa8063908befa3440508d0584a2497b97db inc/Module/Install/WriteAll.pm
+SHA1 41030fca6df302b776e8beeb892e9ac863b43f6d lib/RT/Extension/StallFutureTicket.pm
+SHA1 7c8828034ec0fc07d475933be64c72b0976191c0 t/00-load.t
+SHA1 8c6a5835d523f8d2eb59461b4ba252f98008fdc9 t/boilerplate.t
+SHA1 0b1c5a2d59be6bfa7d60c64cd964fea6a0331705 t/pod-coverage.t
+SHA1 640935336dc1123c0069bcf5432bcaedc2cf22d3 t/pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iEYEARECAAYFAk7E5HsACgkQWFkxZRfLwXIcSACfRqPqpxQ8AuhhjCSRbqtD0qYT
+ujAAoLCUDsKAEuMU74B5B9o4BZH/UpCW
+=WVG/
+-----END PGP SIGNATURE-----
