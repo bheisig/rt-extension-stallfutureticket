@@ -1,5 +1,8 @@
 Revision history for RT-Extension-StallFutureTicket
 
+0.2.1   Thu, 17 Nov 2011 13:00:38 +0100
+        fixed missing version update
+
 0.2     Thu, 17 Nov 2011 12:37:58 +0100
         return error message if start time is not set
         improved meta information

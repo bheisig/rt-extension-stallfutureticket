@@ -12,12 +12,12 @@ time is set to a future date
 
 =head1 VERSION
 
-Version 0.1.1
+Version 0.2.1
 
 
 =cut
 
-our $VERSION = '0.1.1';
+our $VERSION = '0.2.1';
 
 
 =head1 SYNOPSIS
