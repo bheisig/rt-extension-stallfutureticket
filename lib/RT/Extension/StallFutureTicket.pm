@@ -13,11 +13,6 @@ RT::Extension::StallFutureTicket - Stall a new ticket automatically when start
 time is set to a future date
 
 
-=cut
-
-our $VERSION = '0.3';
-
-
 =head1 DESCRIPTION
 
 This RT Extension allows to automatically stall created tickets with a start
