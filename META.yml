@@ -10,7 +10,6 @@ requires:
   Date::Manip: 6.25
   perl: 5.10.0
 distribution_type: module
-generated_by: 'Module::Install version 1.00'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -26,5 +25,4 @@ no_index:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://git.benjaminheisig.net/rt-extension-stallfutureticket.git
-version: 0.2.1
-
+version: 0.3

@@ -1,15 +1,14 @@
+%# RT::Extension::StallFutureTicket
+%#
+%# Copyright 2011 synetics GmbH, http://i-doit.org/
+%#
+%# This program is free software; you can redistribute it and/or modify it under
+%# the same terms as Perl itself.
+%#
+%# Request Tracker (RT) is Copyright Best Practical Solutions, LLC.
+
 <%INIT>
-
-## RT::Extension::StallFutureTicket
-##
-## Copyright 2011 Benjamin Heisig, <bheisig@synetics.de>
-##
-## This program is free software; you can redistribute it and/or modify it under
-## the same terms as Perl itself.
-##
-## Request Tracker (RT) is Copyright Best Practical Solutions, LLC.
-
-use Date::Manip;
+use Date::Manip::Date;
 
 use strict;
 
@@ -24,7 +23,7 @@ if (!exists $$ARGSRef{'AddMoreAttach'} && defined($$ARGSRef{'id'}) &&
     ## Check wether 'Starts' is set:
     if ((!$$ARGSRef{'Starts'}) || ($$ARGSRef{'Starts'} =~ /^[ \t]*$/)) {
         $$skip_create = 1;
-        push @{$results}, loc('Error: empty start date');
+        push @{$results}, loc('Empty start date');
     } else {
         ## Parse start date:
         my $starts = $$ARGSRef{'Starts'};
@@ -44,8 +43,8 @@ if (!exists $$ARGSRef{'AddMoreAttach'} && defined($$ARGSRef{'id'}) &&
         }
     }
 }
-
 </%INIT>
+
 <%ARGS>
 $skip_create => undef
 $results => undef
