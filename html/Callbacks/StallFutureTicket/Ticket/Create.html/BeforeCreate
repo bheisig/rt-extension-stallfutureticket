@@ -37,7 +37,7 @@ if (!exists $$ARGSRef{'AddMoreAttach'} && defined($$ARGSRef{'id'}) &&
         my $cmp = $date->cmp($now);
 
         ## Make a decision:
-        if ($cmp >= 0) {
+        if ($cmp > 0) {
             ## Update status:
             $$ARGSRef{'Status'} = 'stalled';
         }

@@ -1,7 +1,10 @@
 package RT::Extension::StallFutureTicket;
 
+use 5.010;
 use warnings;
 use strict;
+
+our $VERSION = '0.3';
 
 
 =head1 NAME
