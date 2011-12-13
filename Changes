@@ -1,5 +1,12 @@
 Revision history for RT-Extension-StallFutureTicket
 
+0.3     Tue, 13 Dec 2011 14:08:43 +0100
+        fixed comparison
+        switched to POD
+        updated installation modules
+        added localization
+        improved meta information
+
 0.2.1   Thu, 17 Nov 2011 13:00:38 +0100
         fixed missing version update
 
@@ -13,4 +20,3 @@ Revision history for RT-Extension-StallFutureTicket
 
 0.1     Tue, 15 Nov 2011 10:07:47 +0100
         Initial release.
-
